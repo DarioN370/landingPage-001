@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh; /* define que ele use 100% da tela (view height*/
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+} /*Muda a cor do back e das palavras normais*/
+
+
+.titulo-destaque {
+    color: #22D4FD; /*Muda a cor do Strong, mas assim ele muda só a cor da classe, não da tag*/
+}
+
+.apresentacao{
+    margin:10% 15%; /*vai mudar a distancia até as imagens*/
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; /*enquanto tiver espaço vai pro lado*/
+}
+
+.apresentacao__conteudo{ 
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /*Todos esses comandos serviram pra colocar um espaçamento mas na vertical, em colum*/
+
+
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    background-color: #22D4FD;
+    width: 280px; /*tamanho*/
+    text-align: center; /*Alinha os textos*/
+    border-radius: 16px; /*arredonda a borda do link */
+    /* Estilos de Bordas  */
+/*border-width: 30px; // Estiliza a sua largura
+border-style: solid; // Estiliza seu estilo
+border-color:  blue; // Estiliza sua cor*/
+
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: 600; /*puxa o preenchimento da fonte*/
+    padding: 21,5px 0; /*quando vc coloca só padding e dois valores, ele considera respectivamente horizontal e vertical*/
+    text-decoration: none; /*Esse serve para tirar os sublinhados dos links*/
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+}
